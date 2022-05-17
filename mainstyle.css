@@ -1,0 +1,302 @@
+header img {
+  height: 80px;
+  margin-left: 40px;
+}
+body {
+    height: 125vh;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/193/193699.png);
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 50px;
+    font-size: larger;
+    padding: 30px;
+}
+main {
+    color: white;
+}
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+}
+header * {
+  display: inline;
+}
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: black;
+  text-decoration: none;
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 100% / 1.5 Arial;
+/*   background: linear-gradient(135deg, #3e028c -50%, #000 100%); */
+  background-image: linear-gradient(135deg, #e7627d 0%, #b8235a 25%, #801357 50%, #3d1635 75%, #1c1a27 100%);
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+.fixed {
+  position: fixed;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  width: 100vw;
+  top: 50%;
+  font-size: 24px;
+}
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
+}
+.parallax__layer--back2 {
+  -webkit-transform: translateZ(-6px) scale(5);
+  transform: translateZ(-6px) scale(5);
+}
+.parallax__layer--back3 {
+  -webkit-transform: translateZ(-12px) scale(6);
+  transform: translateZ(-12px) scale(6);
+}
+
+/* add some padding to force scrollbars */
+.parallax__layer {
+  padding: 100vh 0;
+}
+
+.starfield > * {
+  background-size: 200px 200px;
+  background-image: radial-gradient(
+      2px 2px at 40px 60px,
+      #ccc,
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(2px 2px at 20px 50px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 30px 100px, #eee, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 40px 60px, rgb(0, 255, 0), rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 110px 90px, rgb(255, 0, 0), rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 190px 150px, rgb(255, 200, 0), rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+}
+.starfield > * {
+  position: absolute;
+  top: -250%;
+  left: 0;
+  height: 500%;
+  width: 100%;
+}
+
+.starfield span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.starfield span:nth-child(3) {
+  transform: rotate(69deg);
+}
+.starfield span:nth-child(4) {
+  transform: rotate(123deg);
+}
+
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: rgb(136, 21, 21);
+      border: none;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 15px;
+      padding: 20px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button:hover span {
+      padding-right: 25px;
+    }
+    
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+      h1 {
+        color: rgb(0, 0, 0);
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 300;
+    }
+    h2 {
+        color: rgb(0, 0, 0);
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 300;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    h3 {
+        color: rgb(0, 0, 0);
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 300;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    p {
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .class {
+        text-indent: 10px;
+    }
+    table {
+        border: 2px solid rgb(0, 0, 0);
+        border-collapse: collapse;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    th {
+        border: 1px solid rgb(0, 0, 0);
+        border-collapse: collapse;
+        text-align: center;
+        vertical-align: middle;
+    }
+    td {
+        border: 1px solid rgb(0, 0, 0);
+        border-collapse: collapse;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .div1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      padding-top: 30px;
+      padding-bottom: 50px;
+      width: 800px;
+  }
+  .div2 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 120px;
+      margin-bottom: 50px;
+      width: 1200px;
+      background-color: rgba(255, 255, 255, 0.529);
+  
+  }
+  .div3 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      padding-top: 30px;
+      padding-bottom: 70px;
+      width: 800px;
+  }
+  .zoom {
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  }
+  
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgb(136, 21, 21);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+
+  
